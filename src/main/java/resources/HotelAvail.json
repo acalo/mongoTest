@@ -1,0 +1,118 @@
+"Hotel" : [
+{
+"Code" : "WG67LFAM",
+"Description" : "Description",
+"Name" : "Hotel BCN 9",
+"Position" : "1",
+"Reference" : "6",
+"StarRating" : "5",
+"URLPath" : "/hotel/WG67LFAM/Hotel BCN 9",
+"RelativePositions" : {
+"RelativePosition" : [
+{
+"Distance" : "100",
+"Location" : "Airport",
+"Type" : "Airport",
+},
+{
+"Distance" : "20",
+"Location" : "Rail Station",
+"Type" : "Reference",
+}
+]
+},
+"Rooms" : {
+"Room" : [
+{
+"Code" : "DBL",
+"Description" : "Doble",
+"Name" : "Doble",
+"REF" : "0",
+"RemainingUnits" : "0+",
+"SpecialOffer" : "false",
+"Meals" : {
+"Meal" : [
+{
+"Code" : "14",
+}
+]
+},
+"Price" : {
+"Base" : {
+"Amount" : "2065",
+"Currency" : "USD",
+},
+"TotalPerNight" : {
+"Amount" : "295",
+"Currency" : "USD",
+},
+"Total" : {
+"Amount" : "2065",
+"Currency" : "USD",
+}
+}
+}
+]
+},
+"Address" : {
+"Compressed" : "Street Putget 68-74, Barcelona, 08023",
+"PostalCode" : "08023",
+"CountryName" : {
+"Code" : "ES",
+},
+"CityName" : [
+{
+"_text" : "Barcelona"
+}
+],
+"StreetNmbr" : [
+{
+"_text" : "Street Putget 68-74"
+}
+]
+},
+"Amenities" : {
+"Amenity" : [
+{
+"Code" : "79",
+},
+{
+"Code" : "78",
+},
+{
+"Code" : "35",
+},
+{
+"Code" : "33",
+},
+{
+"Code" : "180",
+},
+{
+"Code" : "27",
+},
+{
+"Code" : "2",
+},
+{
+"Code" : "47",
+}
+]
+},
+"Location" : {
+"Code" : "CITY_BCN_ES",
+"Name" : "Barcelona",
+},
+"TimeSpan" : {
+"Nights" : "7",
+"CheckIn" : {
+"Date" : "2014-10-14",
+"Time" : "00:00",
+},
+"CheckOut" : {
+"Date" : "2014-10-21",
+"Time" : "00:00",
+}
+}
+},...
+]

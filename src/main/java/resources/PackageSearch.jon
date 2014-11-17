@@ -1,0 +1,169 @@
+"Package" : [
+{
+"REF" : "P5.0",
+"Type" : "HF",
+"Passengers" : {
+"Adults" : "2",
+"Children" : "0",
+"Infants" : "0",
+},
+"Flights" : {
+"Mode" : "return",
+"Flight" : [
+{
+"Options" : "30",
+"Type" : "Outbound",
+"Option" : [
+{
+"Amount" : "430.01",
+"Currency" : "USD",
+"DirectionInd" : "return",
+"Duration" : "03:10:00",
+"JourneyId" : "1",
+"REF" : "1",
+"Selected" : "true",
+"FlightLeg" : [
+{
+"CabinClass" : "Economy",
+"Duration" : "03:10:00",
+"FlightNumber" : "50165",
+"MarketingAirline" : "U2",
+"Departure" : {
+"Airport" : "Dublin",
+"Date" : "2014-10-14",
+"IATA" : "DUB",
+"Time" : "11:15:00",
+},
+"Arrival" : {
+"Airport" : "Barcelona (Barcelona Intl.)",
+"Date" : "2014-10-14",
+"IATA" : "BCN",
+"Time" : "14:25:00",
+}
+}
+]
+}
+]
+},
+{
+"Options" : "7",
+"Type" : "Inbound",
+"Option" : [
+{
+"Amount" : "430.01",
+"Currency" : "USD",
+"DirectionInd" : "return",
+"Duration" : "01:45:00",
+"JourneyId" : "2",
+"REF" : "1",
+"Selected" : "true",
+"FlightLeg" : [
+{
+"CabinClass" : "Economy",
+"Duration" : "01:45:00",
+"FlightNumber" : "50166",
+"MarketingAirline" : "U2",
+"Departure" : {
+"Airport" : "Barcelona (Barcelona Intl.)",
+"Date" : "2014-10-21",
+"IATA" : "BCN",
+"Time" : "06:30:00",
+},
+"Arrival" : {
+"Airport" : "Dublin",
+"Date" : "2014-10-21",
+"IATA" : "DUB",
+"Time" : "08:15:00",
+}
+}
+]
+}
+]
+}
+]
+},
+"Price" : {
+"SubTotal" : {
+"Amount" : "2514",
+"Currency" : "USD",
+},
+"Saving" : {
+"Amount" : "28",
+"Currency" : "USD",
+},
+"CartTotal" : {
+"Amount" : "2542",
+"Currency" : "USD",
+},
+"TotalPerPerson" : {
+"Amount" : "1257",
+"Currency" : "USD",
+},
+"Total" : {
+"Amount" : "2514",
+"Currency" : "USD",
+}
+},
+"Hotel" : {
+"Amenities" : "null",
+"Code" : "WG67LFAL",
+"Description" : "Description",
+"Name" : "Hotel BCN 8",
+"Position" : "1",
+"REF" : "6",
+"RelativePositions" : "null",
+"StarRating" : "5",
+"URLPath" : "/hotel/WG67LFAL/Hotel BCN 8",
+"Rooms" : [
+{
+"Room" : [
+{
+"Adults" : "2",
+"CheckInDate" : "2014-10-14T14:00:00",
+"CheckOutDate" : "2014-10-21T12:00:00",
+"Duration" : "7",
+"Index" : "1",
+"Options" : "1",
+"REF" : "1",
+"Total" : "2",
+"Option" : [
+{
+"Amount" : "0",
+"Code" : "DBL",
+"Currency" : "USD",
+"Description" : "Doble",
+"Name" : "Doble",
+"REF" : "0",
+"Selected" : "true",
+"SpecialOffer" : "false",
+"Meals" : {
+"Meal" : [
+{
+"Code" : "14",
+}
+]
+}
+}
+]
+}
+]
+}
+],
+"Address" : {
+"Compressed" : ", Barcelona",
+"CountryName" : {
+"Code" : "ES",
+},
+"CityName" : [
+{
+"_text" : "Barcelona"
+}
+]
+},
+"Location" : {
+"Code" : "CITY_BCN_ES",
+"Name" : "Barcelona",
+}
+}
+},...
+]
