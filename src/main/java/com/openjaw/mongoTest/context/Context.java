@@ -54,6 +54,8 @@ public class Context {
 	}
 	
 	private void init(){
+		System.setProperty("javax.xml.transform.TransformerFactory",  
+				"net.sf.saxon.TransformerFactoryImpl"); 
 		initProp();
 		initMongoDB();
 	}
