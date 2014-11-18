@@ -27,6 +27,9 @@ import com.openjaw.mongoTest.domain.FlightsData;
 import com.openjaw.mongoTest.domain.HotelData;
 import com.openjaw.mongoTest.domain.HotelsData;
 import com.openjaw.mongoTest.domain.ServicesData;
+import com.openjaw.mongoTest.domain.openjaw.HotelSearchResults;
+import com.openjaw.mongoTest.domain.openjaw.POS;
+import com.openjaw.mongoTest.domain.openjaw.PageInfo;
 
 
 public class Tools {
@@ -112,6 +115,56 @@ public class Tools {
 		hts.setHotels(hotels);
 		services.setFlights(fls);
 		services.setHotels(hts);
+		
+		String xml = ObjecttoXML(ServicesData.class, services);
+		
+		return xml;
+	}
+	
+	public static String generateRandomHotelsJSON(){
+		HotelSearchResults hotelSearch = new HotelSearchResults();
+		Random r = new Random();
+		
+		int servicios = 10;
+		String[] typeArray = {"A","V"};
+		
+		Integer[] poblationReturnArray = {6396,7257,6430,4984};
+		Integer[] poblationOutboundArray = {2674,4512,9966,8255};
+		String[] companyArray = {"C1","C2","C3"};
+		String[] hotelArray = {"H1","H2","H3","H4","H5"};
+		int numOffsetDate = 11;
+		int[] offsetDates = {30, 60, 120, 150, 180, 30, 60, 30, 120, 150, 30};
+		
+		PageInfo pinfo = new PageInfo();
+		pinfo.setConversationID("conversationID");
+		pinfo.setFromServicing(true);
+		pinfo.setLanguage("language");
+		pinfo.setLocale("locale");
+		POS pos = new POS();
+		pos.setCompanyCode("companyCode");
+		pinfo.setPOS(pos);
+		pinfo.setReadOnly(true);
+		pinfo.setSessionID("sessionID");
+		pinfo.setSessionSource("sessionSource");
+		pinfo.setSkin("skin");
+		
+		for (int i=0;i<servicios;i++){
+			int offsetDate = (int) (Math.random() * offsetDates[(int) (Math.random() * numOffsetDate)] + 1);
+			int numNights = (int) (Math.random() * 7 + 1);
+			String dateIn = Tools.formatDate(Tools.offsetCurrentDate(offsetDate).getTime());
+			String dateOut = Tools.formatDate(Tools.offsetCurrentDate(offsetDate + numNights).getTime());
+			// Poblation
+			Integer poblationReturn = poblationReturnArray[r.nextInt(4)];
+			Integer poblationOutbound = poblationOutboundArray[r.nextInt(4)];
+			// Price
+			Integer price = r.nextInt(300);
+			
+			// type
+			String type = typeArray[r.nextInt(2)];
+			
+			
+		}
+		
 		
 		String xml = ObjecttoXML(ServicesData.class, services);
 		
